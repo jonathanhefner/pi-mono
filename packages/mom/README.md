@@ -247,7 +247,7 @@ You can ask mom to create skills for you. For example:
 
 Mom would create something like `/workspace/skills/note/SKILL.md`:
 
-```markdown
+````markdown
 ---
 name: note
 description: Add and read notes from a persistent notes file
@@ -260,30 +260,30 @@ Manage a simple notes file with timestamps.
 ## Usage
 
 Add a note:
-\`\`\`bash
+```bash
 bash {baseDir}/note.sh add "Buy groceries"
-\`\`\`
+```
 
 Read all notes:
-\`\`\`bash
+```bash
 bash {baseDir}/note.sh read
-\`\`\`
+```
 
 Search notes by keyword:
-\`\`\`bash
+```bash
 grep -i "groceries" ~/.notes.txt
-\`\`\`
+```
 
 Search notes by date (format: YYYY-MM-DD):
-\`\`\`bash
+```bash
 grep "2025-12-13" ~/.notes.txt
-\`\`\`
+```
 
 Clear all notes:
-\`\`\`bash
+```bash
 bash {baseDir}/note.sh clear
-\`\`\`
 ```
+````
 
 And `/workspace/skills/note/note.sh`:
 
